@@ -1,6 +1,6 @@
 var fivebeans = require('fivebeans');
 
-var client = new fivebeans.client('challenge.aftership.net', 11300);
+var client = new fivebeans.client('localhost', 11300);
 var tube = "DexterYan";
 var priority = 0;
 var delay = 0;
@@ -18,11 +18,14 @@ client
 			});
 		});
 	})
-	.on('error', function(){
+	.on('error', function(err){
+		console.log(err);
 
 	})
 	.on('close', function(){
 
 	})
 	.connect();
+
+
 
