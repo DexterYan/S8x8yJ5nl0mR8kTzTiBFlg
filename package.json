@@ -1,19 +1,22 @@
 {
-  "name": "test",
+  "name": "aftership-challenge-3",
   "private": true,
   "version": "0.0.0",
   "description": "aftership-challenge-3",
   "keywords": [],
   "dependencies": {
-    "fivebeans": "1.1.1"
+    "fivebeans": "1.1.1",
+    "mongoose": "3.8.20",
+    "cheerio": "*",
+    "request": "*"
   },
   "scripts": {
-    "start": "node app.js",
-    "debug": "node debug app.js"
+    "start": "node start.js",
+    "process": "node process.js"
   },
-  "main": "app.js",
+  "main": "process.js",
   "repository": {
-    "type": "git",
+    "type": "git"
   },
   "author": "dexter",
   "license": ""
