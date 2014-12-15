@@ -31,9 +31,11 @@ Crawler.prototype.saveDb = function(from, to, rate,callback) {
 	dataModel.save(function(err,res){
 		if(err){
 			console.log(err);
+			self.mongoose.disconnect()
 			callback(false);
 		}else{
 			console.log(res);
+			self.mongoose.disconnect()
 			callback(true);
 		}
 	})
