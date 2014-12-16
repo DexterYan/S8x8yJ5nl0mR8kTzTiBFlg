@@ -1,3 +1,12 @@
+## How to use?
+
+1. run the request.js to get the server's request address and port
+2. put the address and port into config.js
+3. run the start.js with `NODE_ENV=production node start.js` to submit the job
+4. run the process.js with `NODE_ENV=production node process.js` to do the challenge
+5. You can do local test with changethe environment into dev `NODE_ENV=production node process.js`
+6. If you want to clean the reserved jobs in the server by running ``NODE_ENV=production node clear.js`
+
 ## The challenge
 ---
 
