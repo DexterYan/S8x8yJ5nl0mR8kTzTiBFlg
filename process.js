@@ -1,7 +1,8 @@
+var config = require('./config');
 var fivebeans = require('fivebeans');
 var Crawler = require('./crawler');
 
-var client = new fivebeans.client('localhost', 11300);
+var client = new fivebeans.client(config.address, config.port);
 var tube = "DexterYan";
 var priority = 0;
 var ttr = 60;
